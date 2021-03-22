@@ -1,0 +1,152 @@
+body, html{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  color: #555;
+}
+.clear{
+  clear:both;
+}
+
+hr{
+  border-top: 1px solid rgba(92, 92, 92, 0.5);
+}
+
+header{
+  position: fixed;
+  width:100%;
+  left:0;
+  top:0;
+}
+
+main{
+  padding-top:56px;
+}
+
+.jumbotron{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(190, 190, 190, 0.7) 100%),url('../images/bg.jpg');
+  background-size: cover;
+  min-height:100vh;
+  background-position:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron h1{
+  color:rgba(212, 212, 212, 0.8);
+}
+.jumbotron p{
+  color:rgba(240, 240, 240, 0.8);
+  margin: 20px auto;
+  animation: blink 6s ease-in-out 0s 1 normal forwards;
+}
+
+#typewriter::after {
+    content: "|";
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count:3;
+    animation-fill-mode:forwards;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.jumbotron .btn{
+  animation: blink 8s ease-in-out 0s 1 normal forwards;
+}
+
+#content{
+  background: rgba(240, 240, 240, 0.8);
+}
+
+#to_top{
+  color: rgba(32, 32, 32, 0.8);
+}
+#to_top:hover{
+  color: rgba(133, 133, 133, 0.8);
+}
+
+.form-control::placeholder {
+  color: #cdd;
+}
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #cdd;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #cdd;
+}
+
+.info{
+    width: 380px;
+}
+
+.info a{
+  color: #555;
+}
+
+.info a:hover{
+  color: #007bff;
+}
+
+.info h1{
+  border-bottom: 6px double #555;
+}
+
+.info h1:first-letter{
+  color:rgb(53, 167, 0);
+  font-size: 120%;
+}
+
+.gojuon{
+  flex-wrap: wrap;
+}
+
+a.btn1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+	height: 41px;
+	min-width: 20px;
+	padding: 0 10px;
+	margin: 5px 10px 10px 10px;
+	background: #EDEDED;
+	border-radius: 10px;
+	box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
+	color: #808080;
+	font: bold 18px mono-space;
+}
+
+a.btn1:hover, a.btn1:active{
+  text-decoration: none;
+  background: #fefefe;
+}
+a.btn1:active{
+  text-decoration: none;
+  color: #555;
+}
+
+
+@media ( min-width: 768px) {
+
+  .gojuon{
+    flex-wrap:nowrap;
+  }
+  .info{
+    width: 800px;
+    margin:0 auto;
+  }
+
+  a.btn1{
+    width: 50px;
+    height:50px;
+    margin-bottom: 30px;
+  }
+}
