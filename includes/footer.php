@@ -1,8 +1,9 @@
 <?php
 //$id:footer;
 ?>
-<div class="container">
-  <div class="text-right"><a href="#" id="to_top"><i class="fas fa-caret-square-up fa-3x" title="Go to Top"></i></a></div>
-</div>
-<footer>
+<footer class="pt-3 bg-dark">
+  <div class="container-fluid">
+    <p class="text-secondary">&copy;2020 Bank Code Search by <a href="https://mito-web.com" target="_blank">MITO-WEB</a></p>
+  </div>
+
 </footer>
